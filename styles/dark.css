@@ -4,9 +4,96 @@
   переключая тему
 */
 
+:root .theme_dark {
+  --color-main-text: #f1b2ce;
+  --color-title-text: #db00ff;
+  --background-color-text: #ed3e6f;
+  --color-text-theme-dark: #000028;
+  --color-text-menu: #ff0070;
+}
+
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-image: url(../images/cover-image-dark.png);
+
+  .header__content-text {
+    color: var(--color-text-theme-dark);
+  }
+
+  .header__theme-menu-item:nth-child(1) {
+    border: none;
+  }
+
+  .header__theme-menu-item:nth-child(3) {
+    border: 1px solid var(--color-main-text);
+  }
+
+  .content__card-title {
+    color: var(--color-shadow);
+  }
+
+  .content__card-container-title,
+  .content__card-title-container {
+    color: var(--color-text-theme-dark);
+  }
+
+  .rec {
+    position: absolute;
+    color: var(--color-shadow);
+    font-family:
+      IBM Plex Mono,
+      sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    inset-inline-end: 28px;
+    inset-block-start: 0;
+  }
+
+  .rec::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 12px;
+    inset-inline-end: -15px;
+    box-shadow: 0 0 3px 4px #ed3e6f;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    background-image: url(../images/cover-image-dark.png);
+  }
+
+  .header__content-text {
+    color: var(--color-text-theme-dark);
+  }
+
+  .content__card-title {
+    color: var(--color-shadow);
+  }
+
+  .content__card-container-title,
+  .content__card-title-container {
+    color: var(--color-text-theme-dark);
+  }
+
+  .rec {
+    position: absolute;
+    color: var(--color-shadow);
+    font-family:
+      IBM Plex Mono,
+      sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    inset-inline-end: 28px;
+    inset-block-start: 0;
+  }
+
+  .rec::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 12px;
+    inset-inline-end: -15px;
+    box-shadow: 0 0 3px 4px #ed3e6f;
+  }
 }
