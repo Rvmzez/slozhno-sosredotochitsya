@@ -368,7 +368,7 @@
   }
 
   .content__card-three {
-    padding: 2px;
+    padding: 3px;
   }
 
   .footer__title {
@@ -506,7 +506,6 @@
   .content__card-title-container {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-    margin-block-end: 10px;
   }
 
   .content__card-three-container-first {
