@@ -377,6 +377,18 @@
     grid-row-start: 1;
     grid-row-end: 2;
   }
+
+  .header__title {
+    text-shadow: 4px 4px 0 var(--color-title-text-minsize);
+  }
+
+  .content__card-three {
+    padding: 2px;
+  }
+
+  .footer__title {
+  text-shadow: 4px 4px 0 var(--color-title-text-minsize);
+  }
 }
 
 @media (width <= 595px) {
@@ -386,6 +398,10 @@
 
   .header {
     grid-template-rows: 34% min-content 23%;
+  }
+
+  .header::before {
+    inset-block-end: 20px;
   }
 
   .header__title {
