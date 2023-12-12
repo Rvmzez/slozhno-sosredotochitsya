@@ -3,13 +3,6 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
-  --color-main-text: #353430;
-  --color-title-text: #ffc2e6;
-  --color-shadow: #ff0070;
-  --background-color-text: #f08bca;
-}
-
 .page.theme_light,
 .page.theme_auto {
   .rec {

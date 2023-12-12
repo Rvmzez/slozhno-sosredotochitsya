@@ -3,16 +3,13 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
-:root .theme_dark {
+.page.theme_dark {
   --color-main-text: #f1b2ce;
   --color-title-text: #db00ff;
   --background-color-text: #ed3e6f;
   --color-text-theme-dark: #000028;
   --color-text-menu: #ff0070;
-}
 
-.page.theme_dark {
   background-image: url(../images/cover-image-dark.png);
 
   .header__content-text {
@@ -39,9 +36,7 @@
   .rec {
     position: absolute;
     color: var(--color-shadow);
-    font-family:
-      IBM Plex Mono,
-      sans-serif;
+    font-family: IBM Plex Mono, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
@@ -79,9 +74,7 @@
   .rec {
     position: absolute;
     color: var(--color-shadow);
-    font-family:
-      IBM Plex Mono,
-      sans-serif;
+    font-family: IBM Plex Mono, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
