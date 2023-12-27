@@ -3,19 +3,59 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-.page.theme_light,
-.page.theme_auto {
+.page.theme_light {
+  --color-main-text: #353430;
+  --color-title-text: #ffc2e6;
+  --color-shadow: #ff0070;
+  --background-color-text: #f08bca;
+  --color-text-menu: #353430;
+  --color-title-text-minsize: #FF8DCB;
+  --font-size-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --background-color: #fcedf6;
+  --border-color-hover: rgba(50, 49, 45, 0.40);
+  --background-image: url(../images/cover-image-light.png);
+  
+  .header__theme-menu-button {
+    color: var(--color-main-text);
+  } 
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--color-main-text);
+  }
+
+  .header__content-text {
+    color: var(--color-main-text);
+  }
+
+  .decorated-zone::before {
+    border-inline-start: 1px solid var(--color-main-text);
+    border-block-end: 1px solid var(--color-main-text); 
+  }
+
+  .decorated-zone::after {
+    border-block-start: 1px solid var(--color-main-text);
+    border-inline-end: 1px solid var(--color-main-text);
+  }
+
   .rec {
-    opacity: 0;
+    display: none;
+  }
+
+  .content__card-title {
+    color: var(--color-main-text);
+  }
+
+  .content__card-container-title {
+    color: var(--color-main-text);
+  }
+
+  .content__card-title-container {
+    color: var(--color-main-text);
   }
 }
 
-.page.theme_auto {
-  .header__theme-menu-item:nth-child(1) {
-    border: none;
-  }
-
-  .header__theme-menu-item:nth-child(2) {
-    border: 1px solid var(--color-main-text);
+@media (prefers-color-scheme: light) {
+  .page.theme_auto .rec {
+    opacity: 0;
   }
 }

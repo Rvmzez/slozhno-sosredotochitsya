@@ -10,4 +10,8 @@
   --background-color-text: #f08bca;
   --color-text-menu: #353430;
   --color-title-text-minsize: #FF8DCB;
+  --font-size-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --background-color: #fcedf6;
+  --border-color-hover: rgba(50, 49, 45, 0.40);
+  --background-image: url(../images/cover-image-light.png);
 }
