@@ -300,6 +300,15 @@
     text-shadow: 4px 4px 0 var(--color-title-text-minsize);
   }
 
+  .content__card-concentrate {
+    row-gap: 20px;
+    column-gap: 40px;
+  }
+
+  .content__card-container-text {
+    padding-inline-end: 3px;
+  }
+
   .content__card-attention-block {
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   }
