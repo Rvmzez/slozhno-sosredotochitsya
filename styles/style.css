@@ -118,8 +118,7 @@
 .content__card-concentrate {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  row-gap: 20px;
-  column-gap: 40px;
+  gap: 20px;
 }
 
 .content__card-concentrate-block {
@@ -153,7 +152,6 @@
   font-weight: 400;
   line-height: 23.4px;
   margin-block-start: 10px;
-  padding-inline-end: 5px;
 }
 
 .link {
@@ -341,6 +339,10 @@
     margin-block-start: 30px;
   }
 
+  .content__card-container-text {
+    padding-inline-end: 5px;
+  }
+
   .content__card-attention {
     margin-block-start: 50px;
     gap: 20px;
@@ -348,14 +350,11 @@
 
   .content__card-solution {
     column-gap: 0;
+    margin-block-start: 50px;
   }
 
   .content__card-solution-title {
     margin-block-end: 0;
-  }
-
-  .content__card-solution {
-    margin-block-start: 50px;
   }
 
   .content__image-title {
